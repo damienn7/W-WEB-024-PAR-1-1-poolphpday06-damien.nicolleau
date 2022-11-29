@@ -21,7 +21,6 @@ function write_into_my_file(string $str, string $file, bool $append = false)
     {
         return false;
     }
-    
 }
 
 //write_into_my_file("toto", "/Users/frimousse/W-WEB-024-PAR-1-1-poolphpday06-damien.nicolleau/test.txt",false);

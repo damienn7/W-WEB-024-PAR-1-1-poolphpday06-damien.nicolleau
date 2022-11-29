@@ -2,6 +2,7 @@
 
 function my_cat_files(string $file_path)
 {   
+    $content="";
     $paths=func_get_args();
     foreach($paths as $value)
     {
@@ -9,7 +10,7 @@ function my_cat_files(string $file_path)
         if($handle)
         {
         $content = fread($handle, filesize($value));
-        $contents.=$content."_____";
+        $contents.=$content."\n_____\n";
         fclose($handle);
         }
     }

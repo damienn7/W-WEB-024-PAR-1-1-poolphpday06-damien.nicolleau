@@ -7,7 +7,7 @@ function my_generate_file (string $name)
         "x"
     );
 
-    if(!file_exists($file))
+    if($file)
     {
         return false;
     }
