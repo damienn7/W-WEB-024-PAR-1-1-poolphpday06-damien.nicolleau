@@ -2,7 +2,7 @@
 
 function write_into_my_file(string $str, string $file, bool $append = false)
 {
-    if(is_writable($file))
+    if(file_exists($file))
     {
         if($append==true)
         {

@@ -2,7 +2,7 @@
 
 function my_cat_files(string $file_path)
 {   
-    $content="";
+    $contents="";
     $paths=func_get_args();
     foreach($paths as $value)
     {
